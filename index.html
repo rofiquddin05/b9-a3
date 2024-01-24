@@ -1,112 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hockey</title>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  *{
-    font-family: 'Manrope', sans-serif;
-  }
-</style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
+
 <body class="">
   <header>
     <section>
-    <nav class="sm:mt-3 mx-0 lg:mt-5 mx-20" >
-      <div class="navbar">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      <nav class="sm:mt-3 mx-0 lg:mt-5 mx-20">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <a class="text-[#FF4240]">Home</a>
+                <a>Pages</a>
+                <a>Blog</a>
+                <a>Contact</a>
+              </ul>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <a class="btn btn-ghost text-4xl font-extrabold gap-0 ">Hockey
+              <span class="text-[#FF4240]">’</span>
+              s</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 space-x-5">
               <a class="text-[#FF4240]">Home</a>
-                  <a>Pages</a>
-                  <a>Blog</a>
+              <a>About</a>
+              <a>Pages</a>
+              <a>Blog</a>
               <a>Contact</a>
             </ul>
+
           </div>
-          <a class= "btn btn-ghost text-4xl font-extrabold gap-0 ">Hockey
-            <span class="text-[#FF4240]">’</span>
-            s</a>
+
+          <div class="navbar-end">
+            <button class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+
+            <a class="text-white btn bg-[#FF4240]">Get Ticket</a>
+          </div>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 space-x-5">
-            <a class="text-[#FF4240]">Home</a>
-            <a>About</a>
-            <a>Pages</a>
-            <a>Blog</a>
-            <a>Contact</a>
-          </ul>
-         
-        </div>
-        
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-          </button>
-          
-          <a class="text-white btn bg-[#FF4240]">Get Ticket</a>
-        </div>
-      </div>
-    </nav>
-  </section>
-  <section>
-    <div class="carousel sm:mt-3 mx-0 lg:mt-5 mx-20">
-      <div id="slide1" class="carousel-item relative w-full">
-        <img src="Images/1.png" class=" lg: w-full relative
+      </nav>
+    </section>
+    <section>
+      <div class="carousel sm:mt-3 mx-0 lg:mt-5 mx-20">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class=" lg: w-full relative
                   sm:absolute mb-4" />
-        <div class="lg:absolute right-10 bottom-10 bg-black text-white rounded-2xl w-2/4 h-32 space-y-4 pt-3 pl-3">
-          <h3 class="text-6 font-extrabold ">Meet all the heroes from the field
-          </h3>
-          <p class="text-[#FFFFFF99] text-xs font-medium ">The Men's squad is stacked with talented players, most of whom are past or current junior and senior internationals, having represented their countries at major tournaments such as the Olympic and Commonwealth Games.</p></div>
-        <div class="absolute flex w-3 h-3 gap-1 left-8 right-5 bottom-10 ">
-          <a href="#slide4" class="btn btn-circle bg-black text-white border-black">❮</a> 
-          <a href="#slide2" class="btn btn-circle bg-black text-white border-black">❯</a>
+          <div class="lg:absolute right-10 bottom-10 bg-black text-white rounded-2xl w-2/4 h-32 space-y-4 pt-3 pl-3">
+            <h3 class="text-6 font-extrabold ">Meet all the heroes from the field
+            </h3>
+            <p class="text-[#FFFFFF99] text-xs font-medium ">The Men's squad is stacked with talented players, most of
+              whom are past or current junior and senior internationals, having represented their countries at major
+              tournaments such as the Olympic and Commonwealth Games.</p>
+          </div>
+          <div class="absolute flex w-3 h-3 gap-1 left-8 right-5 bottom-10 ">
+            <a href="#slide4" class="btn btn-circle bg-black text-white border-black">❮</a>
+            <a href="#slide2" class="btn btn-circle bg-black text-white border-black">❯</a>
+          </div>
         </div>
-      </div> 
-      <div id="slide2" class="carousel-item relative w-full">
-        <img src="Images/1.png" class="w-full" />
-        <div class="absolute flex w-3 h-3 gap-1 left-8 right-5 bottom-10">
-          <a href="#slide1" class="btn btn-circle bg-black text-white border-black">❮</a> 
-          <a href="#slide3" class="btn btn-circle bg-black text-white border-black">❯</a>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex w-3 h-3 gap-1 left-8 right-5 bottom-10">
+            <a href="#slide1" class="btn btn-circle bg-black text-white border-black">❮</a>
+            <a href="#slide3" class="btn btn-circle bg-black text-white border-black">❯</a>
+          </div>
         </div>
-      </div> 
-      <div id="slide3" class="carousel-item relative w-full">
-        <img src="Images/1.png" class="w-full" />
-        <div class="absolute flex w-3 h-3 gap-1 left-8 right-5 bottom-10">
-          <a href="#slide2" class="btn btn-circle bg-black text-white border-black">❮</a> 
-          <a href="#slide4" class="btn btn-circle bg-black text-white border-black">❯</a>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex w-3 h-3 gap-1 left-8 right-5 bottom-10">
+            <a href="#slide2" class="btn btn-circle bg-black text-white border-black">❮</a>
+            <a href="#slide4" class="btn btn-circle bg-black text-white border-black">❯</a>
+          </div>
         </div>
-      </div> 
-      <div id="slide4" class="carousel-item relative w-full">
-        <img src="Images/1.png" class="w-full" />
-        <div class="absolute flex w-3 h-3 gap-1 left-8 right-5 bottom-10">
-          <a href="#slide3" class="btn btn-circle bg-black text-white border-black">❮</a> 
-          <a href="#slide1" class="btn btn-circle bg-black text-white border-black">❯</a>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex w-3 h-3 gap-1 left-8 right-5 bottom-10">
+            <a href="#slide3" class="btn btn-circle bg-black text-white border-black">❮</a>
+            <a href="#slide1" class="btn btn-circle bg-black text-white border-black">❯</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="lg:hidden sm:bg-black text-white rounded-2xl w-4/4 h- 32 pl-3 pr-3 pb-3 pt-3 space-y-4 justify-items-center mt-4 ml-20 mr-20">
-      <h3 class="text-6 font-extrabold ">Meet all the heroes from the field
-      </h3>
-      <p class="text-[#FFFFFF99] text-xs font-medium ">The Men's squad is stacked with talented players, most of whom are past or current junior and senior internationals, having represented their countries at major tournaments such as the Olympic and Commonwealth Games.</p></div>
-    </div>
-  </section>
+      <div
+        class="lg:hidden sm:bg-black text-white rounded-2xl w-4/4 h- 32 pl-3 pr-3 pb-3 pt-3 space-y-4 justify-items-center mt-4 ml-20 mr-20">
+        <h3 class="text-6 font-extrabold ">Meet all the heroes from the field
+        </h3>
+        <p class="text-[#FFFFFF99] text-xs font-medium ">The Men's squad is stacked with talented players, most of whom
+          are past or current junior and senior internationals, having represented their countries at major tournaments
+          such as the Olympic and Commonwealth Games.</p>
+      </div>
+      </div>
+    </section>
   </header>
   <main>
-    <div class="border-y border-dashed border-[#13131833] ml-32
-                mr-32 mt-28 mb-28 text-center py-4 space-y-4 sm:mt-10 mb-10">
-      <h2 class="text-4xl font-extrabold text-[#131318]">Professional Hockeys Club</h2>
-      <p class="text-[#13131863] text-xs font-bold ">We are an inclusive hockey club that welcomes all who want to play hockey and be part of a thriving local sports club.</p>
+    <section>
+      <div class="border-y border-dashed border-[#13131833] ml-32
+      mr-32 mt-28 mb-28 text-center py-4 space-y-4 sm:mt-10 mb-10">
+        <h2 class="text-4xl font-extrabold text-[#131318]">Professional Hockeys Club</h2>
+        <p class="text-[#13131863] text-xs font-bold ">We are an inclusive hockey club that welcomes all who want to
+          play hockey and be part of a thriving local sports club.</p>
+      </div>
+    </section>
+    <section>
+      <diV>
+        <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+      <h3 class="text-xl ">Prayer Facility</h3>
+      <p class="text-[#13131899] text-base font-normal">The availability of prayer facilities reflects a commitment to religious diversity and inclusivity, allowing individuals to practice their faith in public or shared spaces.</p>
+      </diV>
+      <diV>
+        <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+      <h3 class="text-xl ">Experienced Coach</h3>
+      <p class="text-[#13131899] text-base font-normal">They play a crucial role in helping individuals unlock their potential and achieve success in their personal and professional lives.</p>
+      </diV>
+      <diV>
+        <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+      <h3 class="text-xl ">Senior Player</h3>
+      <p class="text-[#13131899] text-base font-normal">Senior players are often valued for their leadership, experience, and skill on the field.</p>
+      </diV>
+      <diV>
+        <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+      <h3 class="text-xl ">Training Ground</h3>
+      </diV>
 
-    </div>
+    </section>
+
 
 
   </main>
@@ -114,4 +156,5 @@
 
   </footer>
 </body>
+
 </html>
